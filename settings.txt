@@ -1,0 +1,9 @@
+sftp_host=192.168.100.5
+sftp_port=22
+sftp_user=test1
+sftp_password=1234
+sftp_remote_dir=/new
+local_dir=C:\Users\landm\PycharmProjects\pythonProject3\lol
+sql_user=root
+sql_password=Ilyashpak1488
+sql_database=con

@@ -1,0 +1,5 @@
+CREATE SCHEMA `con` ;
+CREATE TABLE `con`.`files2` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NULL DEFAULT NULL,
+  `data` VARCHAR(45) NULL DEFAULT NULL);
