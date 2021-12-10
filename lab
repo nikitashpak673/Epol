@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+int* createArray(int size)
+{
+    return new int[size];
+}
+void FillArray(int* const arr, const int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = rand() % 10;
+    }
+}
+
+void ShowArray(const int* const arr, const int size)
+{
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << endl;
+    }
+    cout << endl;
+}
+void deletesome(int*& aer, int size)
+{
+    int count = 0;
+    for (int i = 0; i < size; i++)
+    {
+        if ((aer[i])%2==0)
+        {
+            count++;
+        }
+
+    }
+    int *aer2=new int[count];
+    for (int i = 0; i < size; i++)
+    {
+        aer2[i] = aer[i];
+        if ((aer[i]) % 2 == 0)
+        {
+            continue;
+        }
+    }
+
+
+
+
+}
+
+int main()
+{
+    const int arrSize = 15;
+    int* aer = createArray(15);
+    FillArray(aer, arrSize);
+    deletesome(aer, arrSize);
+    cout << endl;
+    ShowArray(aer, arrSize);
+
+}
